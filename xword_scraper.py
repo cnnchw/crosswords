@@ -5,7 +5,8 @@ if(not(os.path.isdir("2015"))):
 	os.mkdir("2015")
 if(not(os.path.isdir("2016"))):
 	os.mkdir("2016")
-years = [2016]
+
+years = [2015, 2016]
 base_url = "http://www.xwordinfo.com"
 for year in years:
 	year_url = "http://www.xwordinfo.com/xml/Puzzles/"+ str(year)
