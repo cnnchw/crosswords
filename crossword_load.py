@@ -7,4 +7,6 @@ for year in years[:1]:
 	for puzzle in puzzles_list[:1]:
 		puzzle_text = open(str(year)+"/"+puzzle,"r").read()
 		puzzle_soup = BeautifulSoup(puzzle_text, "lxml")
-		print puzzle_soup
+		grid = puzzle_soup.findAll("grid")[0]
+		print grid.findAll("row")[0].contents[0]
+
